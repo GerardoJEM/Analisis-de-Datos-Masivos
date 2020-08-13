@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="UCI <= 49.5\nentropy = 0.333\nsamples = 1091695\nvalue = [1024530, 67165]\nclass = No Sobrevive"] ;
+1 [label="EDAD <= 51.5\nentropy = 0.87\nsamples = 206338\nvalue = [146337, 60001]\nclass = No Sobrevive"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="INTUBADO <= 1.5\nentropy = 0.641\nsamples = 85176\nvalue = [71316, 13860]\nclass = No Sobrevive"] ;
+1 -> 2 ;
+3 [label="entropy = 1.0\nsamples = 6220\nvalue = [3041, 3179]\nclass = Sobrevive"] ;
+2 -> 3 ;
+4 [label="entropy = 0.572\nsamples = 78956\nvalue = [68275, 10681]\nclass = No Sobrevive"] ;
+2 -> 4 ;
+5 [label="INTUBADO <= 1.5\nentropy = 0.959\nsamples = 121162\nvalue = [75021, 46141]\nclass = No Sobrevive"] ;
+1 -> 5 ;
+6 [label="entropy = 0.868\nsamples = 11627\nvalue = [3368, 8259]\nclass = Sobrevive"] ;
+5 -> 6 ;
+7 [label="entropy = 0.93\nsamples = 109535\nvalue = [71653, 37882]\nclass = No Sobrevive"] ;
+5 -> 7 ;
+8 [label="NEUMONIA <= 1.5\nentropy = 0.068\nsamples = 885357\nvalue = [878193, 7164]\nclass = No Sobrevive"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="EDAD <= 52.5\nentropy = 0.596\nsamples = 25335\nvalue = [21677, 3658]\nclass = No Sobrevive"] ;
+8 -> 9 ;
+10 [label="entropy = 0.317\nsamples = 16906\nvalue = [15934, 972]\nclass = No Sobrevive"] ;
+9 -> 10 ;
+11 [label="entropy = 0.903\nsamples = 8429\nvalue = [5743, 2686]\nclass = No Sobrevive"] ;
+9 -> 11 ;
+12 [label="EDAD <= 55.5\nentropy = 0.038\nsamples = 860022\nvalue = [856516, 3506]\nclass = No Sobrevive"] ;
+8 -> 12 ;
+13 [label="entropy = 0.018\nsamples = 737583\nvalue = [736359, 1224]\nclass = No Sobrevive"] ;
+12 -> 13 ;
+14 [label="entropy = 0.134\nsamples = 122439\nvalue = [120157, 2282]\nclass = No Sobrevive"] ;
+12 -> 14 ;
+}

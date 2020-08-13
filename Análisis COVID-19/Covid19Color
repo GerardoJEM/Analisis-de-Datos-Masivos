@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<UCI &le; 49.5<br/>entropy = 0.333<br/>samples = 1091695<br/>value = [1024530, 67165]<br/>class = No Sobrevive>, fillcolor="#e78946"] ;
+1 [label=<EDAD &le; 51.5<br/>entropy = 0.87<br/>samples = 206338<br/>value = [146337, 60001]<br/>class = No Sobrevive>, fillcolor="#f0b58a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<INTUBADO &le; 1.5<br/>entropy = 0.641<br/>samples = 85176<br/>value = [71316, 13860]<br/>class = No Sobrevive>, fillcolor="#ea995f"] ;
+1 -> 2 ;
+3 [label=<entropy = 1.0<br/>samples = 6220<br/>value = [3041, 3179]<br/>class = Sobrevive>, fillcolor="#f6fbfe"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.572<br/>samples = 78956<br/>value = [68275, 10681]<br/>class = No Sobrevive>, fillcolor="#e99558"] ;
+2 -> 4 ;
+5 [label=<INTUBADO &le; 1.5<br/>entropy = 0.959<br/>samples = 121162<br/>value = [75021, 46141]<br/>class = No Sobrevive>, fillcolor="#f5ceb3"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.868<br/>samples = 11627<br/>value = [3368, 8259]<br/>class = Sobrevive>, fillcolor="#8ac5f0"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.93<br/>samples = 109535<br/>value = [71653, 37882]<br/>class = No Sobrevive>, fillcolor="#f3c4a2"] ;
+5 -> 7 ;
+8 [label=<NEUMONIA &le; 1.5<br/>entropy = 0.068<br/>samples = 885357<br/>value = [878193, 7164]<br/>class = No Sobrevive>, fillcolor="#e5823b"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<EDAD &le; 52.5<br/>entropy = 0.596<br/>samples = 25335<br/>value = [21677, 3658]<br/>class = No Sobrevive>, fillcolor="#e9965a"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.317<br/>samples = 16906<br/>value = [15934, 972]<br/>class = No Sobrevive>, fillcolor="#e78945"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.903<br/>samples = 8429<br/>value = [5743, 2686]<br/>class = No Sobrevive>, fillcolor="#f1bc96"] ;
+9 -> 11 ;
+12 [label=<EDAD &le; 55.5<br/>entropy = 0.038<br/>samples = 860022<br/>value = [856516, 3506]<br/>class = No Sobrevive>, fillcolor="#e5823a"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.018<br/>samples = 737583<br/>value = [736359, 1224]<br/>class = No Sobrevive>, fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.134<br/>samples = 122439<br/>value = [120157, 2282]<br/>class = No Sobrevive>, fillcolor="#e5833d"] ;
+12 -> 14 ;
+}
